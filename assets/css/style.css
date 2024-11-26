@@ -90,10 +90,11 @@ button:hover {
 }
 
 #beneficios img {
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    height: auto;
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px;
     margin-top: 15px; /* Espacio entre el título y la imagen */
     border-radius: 8px;
+    align-items: center;
 }
 
 /* Estilo para el mensaje dentro de cada beneficio */
