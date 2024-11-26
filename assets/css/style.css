@@ -1,0 +1,245 @@
+/* Reseteo de márgenes y padding para evitar inconsistencias */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/* Main y formularios con márgenes internos ajustados */
+main, section, form {
+    max-width: 100%;
+    padding: 0 10px; /* Ajusta los márgenes internos si es necesario */
+}
+
+/* Estilo para el main, centrado y con fondo atractivo */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007bff; /* Color de fondo atractivo */
+    color: white;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Párrafo principal */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    color: white;
+}
+
+/* Botón principal de acción */
+button {
+    background-color: #feb47b;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color cuando el usuario pasa el ratón sobre el botón */
+button:hover {
+    background-color: #ff7e5f;
+}
+
+/* Sección de beneficios */
+#beneficios {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
+    justify-content: center; /* Centra los elementos de manera horizontal */
+}
+
+#beneficios h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 100%; /* Asegura que el título ocupe toda la línea */
+}
+
+/* Estilo para los divs dentro de los beneficios */
+#beneficios div {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro de cada div estarán en columna (título, imagen, mensaje) */
+    align-items: center; /* Centra los elementos de forma horizontal */
+    margin-bottom: 30px;
+    margin-right: 20px;
+    flex: 1 1 300px; /* Asegura que los elementos se distribuyan equitativamente */
+    text-align: center; /* Centra el texto dentro de cada contenedor */
+}
+
+#beneficios img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-top: 15px; /* Espacio entre el título y la imagen */
+    border-radius: 8px;
+}
+
+/* Estilo para el mensaje dentro de cada beneficio */
+#beneficios p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Sección de testimonios */
+#testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los testimonios */
+}
+
+.testimonio {
+    display: flex;
+    flex-direction: column; /* Dirección de los testimonios en columna */
+    align-items: center; /* Centra los elementos dentro de cada testimonio */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.testimonio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/* Estilo del encabezado de testimonios */
+#testimonios h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 100%; /* Asegura que el título ocupe toda la línea */
+}
+
+.testimonio p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.testimonio .nombre {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.testimonio img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    height: auto;
+}
+
+/* Estilo del encabezado de testimonios */
+#testimonios h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos */
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+form h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #007bff; /* Color del borde cuando el input tiene el foco */
+}
+
+form button {
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el párrafo debajo del formulario */
+p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 10px;
+    color: white;
+}
